@@ -30,8 +30,8 @@
 
 // Logical operators => && || !
 
-let a = 1 , b = 0 ;
+let a =1  , b = 10;
 console.log(a && b);    
 console.log(a || b);
-// console.log(ab ! ac);
+console.log(!1);
 
