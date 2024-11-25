@@ -80,9 +80,15 @@ console.log("find out area of circle :", circle)
 // find out simple of interest 
 
 let p = 5, r = 3, t = 6;
-let sl = p * r * t;
+let sl = p * r * t / 100;
 
 console.log("find out simple of interest :", sl)
 
 
+// find out salary of employe (basic , HRA(12%),DA (18%))
 
+var basic = 100;
+var HRA = basic * 0.12;
+var DA = basic * 0.18;
+var salary = basic + HRA + DA;
+console.log("find out salary of employe :" , salary);
