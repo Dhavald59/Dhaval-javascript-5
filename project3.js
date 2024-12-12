@@ -1,85 +1,133 @@
-// pogram 1  : Write JS Program to check number is Palindrome or not 
+// 1 
 
-// let n = Number(prompt('enter your number'));
-// let value = n;
-// let reversnumber = 0;
-// while (n > 0) {
-//     let number = n % 10;
-//     reversnumber = reversnumber * 10 + number;
-//     n = (n - (n % 10) ) / 10;
+function greeting() {
+    console.log("good morning!!!!");
+}
+// greeting();
+
+// output : good morning..
+
+///////////////////////////////////////////////////
+
+
+// 2
+
+// function circle(pi, r) {
+//     let area = pi * r * r;
+//     return area;
 // }
-// if (value === reversnumber) {
-//     console.log('palindrome number ',value)
+// console.log("area of circle", circle(3.14, 4));
+// output :area of circle : 50.24
+
+////////////////////////////////////////////////////
+
+
+// 3
+
+// function triangle(l, h) {
+//     let area = ((l * h) / 2)
+//     return area;
 // }
-// else {
-//     console.log('not a palindrome number ',value)
+// console.log("Area of triangle :", triangle(12, 2));
+// output : area of triangle : 12
+
+//////////////////////////////////////////////////////
+
+
+// 4
+
+// function rectangle(l, h) {
+//     let area = l * h
+//     return area;
 // }
+// console.log("Area of rectangle :", rectangle(10, 20));
 
-// output :  palindrome number 121
-
-
-/////////////////////////////////////////////////////////
+// output : Area of rectangle : 200
 
 
-// pogram 2  : Print Series 1, 4, 3, 16, 5, ....
-// for (i = 1; i <= 5; i++) {
-//     if (i % 2 == 0) {
-//         console.log(i ** 2);
+/////////////////////////////////////////////////////
+
+
+// 5
+
+// function xyz(a, b, c) {
+//     let ans = (b * b) * (4 * a * c) / (2 * a)
+//     return ans;
+// }
+// console.log("find ans:",xyz(12, 5, 8));
+
+// output : find ans :400
+
+/////////////////////////////////////////////////
+
+// 6
+
+// function abc(a,b) {
+//     let ans=(a*a)+(2*a*b)+(b*b)
+//     return ans;
+// }
+// console.log("find ans:",abc(12,5));
+
+// output 289
+
+////////////////////////////////////////////////
+
+// 7
+
+// let f = 8;
+// function celsius(a) {
+//     let c = (f * 32) /1.8;
+//     return c;
+// }
+// console.log(celsius(f));
+
+// output 142.222
+
+
+/////////////////////////////////////////////////
+
+// 8
+
+
+// let celsius = 10;
+// function fahaenheit(a) {
+//     let f = celsius * 1.8 + 32;
+//     return f;
+// }
+// console.log(fahaenheit(celsius));
+
+// output : 37
+
+///////////////////////////////////////////////
+
+// 9
+
+// let num = 1;
+// function number(odd) {
+//     if (odd % 2 == 0) {
+//         console.log("even number");
 //     }
-//     if (i % 2 == 1) {
-//         console.log(i);
+//     else {
+//         console.log("odd number");
 //     }
 // }
 
-// output : 1 4 3 16 5
+// number(num);
 
+//   output : 1 is odd number
 
-///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
 
+// 10
 
-// pogram 3 : Print Multiplication table of n
-// let i =1 ;
-// let n = Number(prompt('enter your number'));
-// while (i<=10){
-//     i++;
-//     console.log(n + "*" + i + "=", n * i);
+// function swapping(x, y) {
+//     console.log("Before swapping : x =", x, ", y =", y);
+//     x = x + y;
+//     y = x - y;
+//     x = x - y;
 
+//     console.log("After swapping : x =", x, ", y =", y);
 // }
+// swapping(10, 12);
 
-// output : 10 * 1 = 10
-
-
-/////////////////////////////////////////////////////////
-
-
-// pogram 4 : find out sum of digit of given number
-// let n = Number(prompt("enter your number"));
-// let sum = 0;
-
-// for (let i = 1; i <= n; i++) {
-//     sum += i;
-//     console.log(sum);
-
-// }
-
-// output :- 1,3,6,10,15,21
-
-
-//////////////////////////////////////////////////////////
-
-
-// pogram 5 : print series 1, 1, 2, 3, 5, 8, ...
-
-// let a = 1, b = 1 , i = 0;
-// console.log(a);
-// console.log(b);
-// while (i <= 5) {
-//     let c = a + b;
-//     i++;
-//     console.log(c);
-//     a = b;
-//     b = c;
-// }
-
-
-// output :- 1 , 1 , 2 , 3 , 5 , 8 , 21
+// output : Before swapping : x = 10 , y = 12  Before swapping : x = 12 , y = 10
