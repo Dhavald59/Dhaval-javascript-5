@@ -1,9 +1,13 @@
 // 1 
 
-function greeting() {
-    console.log("good morning!!!!");
+function greeting(abc) {
+    if (abc) {
+        console.log("hello")
+    } else {
+        console.log("good morning!!!!");
+    }
 }
-// greeting();
+greeting();
 
 // output : good morning..
 
