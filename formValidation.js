@@ -6,25 +6,26 @@ let date = document.getElementById('DOB');
 let hobbies = document.getElementById('hobbies');
 let form = document.querySelector("#Formvalidation");
 
+
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-
-    let gender = document.querySelector('input[name = "gender"]:checked');
-
-    if(validateForm()){
-        console.log("submit Form");  
+    
+    
+    if (validateForm()) {
+        console.log("submit Form");
     }
-    console.log(fname.value);
-    console.log(lname.value);
-    console.log(email.value);
-    console.log(pass.value);
-    console.log(date.value);
-    console.log(hobbies.value);
-    console.log(gender.value);
+    // console.log(fname.value);
+    // console.log(lname.value);
+    // console.log(email.value);
+    // console.log(pass.value);
+    // console.log(date.value);
+    // console.log(hobbies.value);
 });
 
 function validateForm() {
-    let isValid = true ;
+    let gender = document.querySelector('input[name = "gender"]:checked');
+    let isValid = true;
+    clearErrors();
     if (fname.value === "") {
         document.getElementById("fnameErr").innerHTML = "first name empty";
         isValid = false;
@@ -48,30 +49,45 @@ function validateForm() {
     if (pass.value === "") {
         document.getElementById("passErr").innerHTML = "password is not empty";
         isValid = false;
-    } else if (paa.value.length < 3) {
+    } else if (pass.value.length < 3) {
         document.getElementById("passErr").innerHTML = "password use 3 charecter ";
         isValid = false;
-    }else{
-        let validPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
-        if(!validPass.test(pass.value)){
-        document.getElementById("passErr").innerHTML = "password in atlent one upeer ,lowwer and digit & spiecal charecter";
-        isValid = false;
-        }
-    }
+    } 
+    // else {
+    //     let validPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+    //     if (!validPass.test(pass.value)) {
+    //         document.getElementById("passErr").innerHTML = "password in atlent one upeer ,lowwer and digit & spiecal charecter";
+    //         isValid = false;
+    //     }
+    // }
 
     if (date.value === "") {
         document.getElementById("DOBErr").innerHTML = "Dob select one";
         isValid = false;
     }
-    if (hobbies.value === "") {
-        document.getElementById("hobbiesErr").innerHTML = "hobbies select one";
-        isValid = false;
-    }
+
     if (!gender) {
         document.getElementById("genderErr").innerHTML = "gender select one";
         isValid = false;
     }
+
+    // if (hobbies.value === "") {
+    //     document.getElementById("hobbiesErr").innerHTML = "Please select one hobby";
+    //     isValid = false;
+    // }
+    if (hobbies.selectedIndex === 0) {
+        document.getElementById("hobbiesErr").innerHTML = "Please select one hobby";
+        isValid = false;
+    }
+
+
     return isValid;
 }
 
+function clearErrors() {
+    let errors = document.querySelectorAll(".errors");
+    for (let i = 0; i < errors.length; i++){
+        errors[i].innerHTML="";
+    }
+}
 
