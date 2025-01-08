@@ -1,22 +1,21 @@
 // pogram 1
 
-// class School {
-//     Studant(name, email, contact) {
-//         console.log("Studant name is :", name);
-//         console.log("Studant email :", email);
-//         console.log("Studant contact Number is :", contact);
-//     }
-//     Faculty(name, email, contact) {
-//         console.log("Faculty name is :", name);
-//         console.log("Faculty email :",email);
-//         console.log("Faculty contact Number is :", contact);
-//     }
-// }
+class School {
+    Studant(name, email, contact) {
+        console.log("Studant name is :", name);
+        console.log("Studant email :", email);
+        console.log("Studant contact Number is :", contact);
+    }
+    Faculty(name, email, contact) {
+        console.log("Faculty name is :", name);
+        console.log("Faculty email :",email);
+        console.log("Faculty contact Number is :", contact);
+    }
+}
 
-// let StuDeatil = new School();
-// StuDeatil.Studant("Dhaval Desai", "dhavald@gmail.com", 1234567891);
-// let FacDeatil = new School();
-// FacDeatil.Faculty("Girishsir", "Girishsir@gmail.com", 9472123446);
+let Deatil = new School();
+Deatil.Studant("Dhaval Desai", "dhavald@gmail.com", 1234567891);
+Deatil.Faculty("Girishsir", "Girishsir@gmail.com", 9472123446);
 
 // output :
 // Studant name is : Dhaval Desai
@@ -100,5 +99,3 @@
 // Circle value is : 452.15999999999997
 // Rectangle value is : 20
 //////////////////////////////////////////////////////////
-
-
