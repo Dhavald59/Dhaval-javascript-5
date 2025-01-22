@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div align="center">
+    <div id="addData" align="center">
         <form >
             <h2>Book form</h2>
             <table>
@@ -30,22 +30,50 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><button id="submit">Submit</button></td>
+                    <td><button id="submit">Add Data</button></td>
                 </tr>
             </table>
         </form>
     </div>
-    <div>
-        <table>
+    <div id="editData" align="center" style="display: none;">
+        <form >
+            <h2>Edit Book form</h2>
+            <table>
+                <tr>
+                    <td>Book name:</td>
+                    <td><input type="text" id="editbookname"></td>
+                </tr>
+                <tr>
+                    <td>Book Price:</td>
+                    <td><input type="text" id="editprice"></td>
+                </tr>
+                <tr>
+                    <td>Book Category:</td>
+                    <td><input type="text" id="editcategory"></td>
+                </tr>
+                <tr>
+                    <td>Book Author:</td>
+                    <td><input type="text" id="editauthor"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="submit">Update Data</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div align="center">
+        <table border="1" style="width: 50%;">
             <thead>
-                <td>#</td>
-                <td>bookname</td>
-                <td>price</td>
-                <td>category</td>
-                <td>author</td>
+                <th>#</th>
+                <th>bookname</th>
+                <th>price</th>
+                <th>category</th>
+                <th>author</th>
+                <th>Action</th>
             </thead>
             <tbody id="bookView">
-                <tr></tr>
+                
             </tbody>
         </table>
     </div>
