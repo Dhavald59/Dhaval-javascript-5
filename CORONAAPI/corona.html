@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID Stats by State</title>
+    <link rel="stylesheet" href="corona.css">
+   
+</head>
+
+<body>
+    <div class="container">
+        <h1>COVID Stats by State</h1>
+        <div class="input-container">
+            <input type="date" id="date" onchange="fetchStates()">
+        </div>
+        <div class="state-cards-container" id="stateCardsContainer">
+        </div>
+        <div id="covidDetail" class="covid-detail" style="display: none;">
+            <h2 id="stateName"></h2>
+            <p id="confirmed"></p>
+            <p id="discharged"></p> 
+            <p id="deaths"></p>
+        </div>
+    </div>
+
+    <script src="corona.js"></script>
+</body>
+
+</html>

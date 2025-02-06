@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    background-color: #f0f0f0;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    background-color: #0000004f;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    color: white;
+}
+
+/* Header Styling */
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Input Section Styling */
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px 15px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* State Cards Styling */
+.state-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.state-card {
+    background-color: #e9f7dfaf;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.state-card:hover {
+    transform: scale(1.05);
+}
+
+.state-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.state-card p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Detail View Styling */
+.covid-detail {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9f7dfaf;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.covid-detail h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.covid-detail p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    background-color: #f56e23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f56e23ab;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input {
+        width: 60%;
+    }
+}
